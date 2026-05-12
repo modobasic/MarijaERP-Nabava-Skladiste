@@ -2,6 +2,16 @@
 
 ERP prototip za nabavu i skladišno poslovanje izrađen u C# WinForms okruženju uz SQL Server bazu podataka.
 
+## Pokretanje projekta
+
+1. Kreirati bazu podataka `MarijaERP` u Microsoft SQL Serveru
+2. Pokrenuti SQL skriptu:
+   `SQLMarijaERP.sql`
+3. Otvoriti `MarijaERP.sln` u Visual Studio okruženju
+4. Provjeriti connection string u `Database.cs`
+5. Pokrenuti aplikaciju
+
+
 ## Funkcionalnosti
 
 - pregled zaliha
@@ -38,10 +48,10 @@ Praćenje kompletnog kretanja LOT-a kroz sustav.
 ## Tehnologije
 
 - C#
-- .NET WinForms
+- WinForms
 - Microsoft SQL Server
 - ADO.NET
-- SQL
+- GitHub
 
 ## Autor
 
