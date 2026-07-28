@@ -1,58 +1,63 @@
 # MarijaERP
 
-ERP prototip za nabavu i skladišno poslovanje izrađen u C# WinForms okruženju uz SQL Server bazu podataka.
+An ERP prototype for procurement and warehouse management, developed using C# WinForms with a Microsoft SQL Server database.
 
-## Pokretanje projekta
+## Running the Project
 
-1. Kreirati bazu podataka `MarijaERP` u Microsoft SQL Serveru
-2. Pokrenuti SQL skriptu:
-   `SQLMarijaERP.sql`
-3. Otvoriti `MarijaERP.sln` u Visual Studio okruženju
-4. Provjeriti connection string u `Database.cs`
-5. Pokrenuti aplikaciju
+1. Create a database named `MarijaERP` in Microsoft SQL Server.
+2. Run the SQL script: `SQLMarijaERP.sql`.
+3. Open `MarijaERP.sln` in Visual Studio.
+4. Check the connection string in `Database.cs`.
+5. Run the application.
 
+## Features
 
-## Funkcionalnosti
+* Inventory overview
+* Items and suppliers
+* Purchase orders
+* LOT-based goods receipt
+* FIFO inventory issuing
+* Business reports
+* LOT traceability
 
-- pregled zaliha
-- artikli i dobavljači
-- narudžbenice
-- zaprimanje robe po LOT-u
-- FIFO izdavanje
-- poslovni izvještaji
-- LOT sljedivost
+## Modules
 
-## Moduli
+### Dashboard
 
-### Pregled
-Praćenje ukupne vrijednosti zaliha, količina, LOT slojeva i upozorenja.
+Monitoring of total inventory value, quantities, LOT layers, and alerts.
 
-### Artikli
-Pregled artikala, minimalnih i sigurnosnih količina te dobavljača.
+### Items
 
-### Narudžbe
-Kreiranje i praćenje otvorenih narudžbenica.
+Overview of items, minimum and safety stock levels, and suppliers.
 
-### Zaprimanje
-Zaprimanje robe po LOT-u uz evidenciju skladišta, otpremnice i roka trajanja.
+### Purchase Orders
 
-### Zalihe
-FIFO izdavanje robe iz LOT slojeva.
+Creation and tracking of open purchase orders.
 
-### Izvještaji
-Pregled otvorenih stavki i vrijednosti zaliha.
+### Goods Receipt
 
-### LOT sljedivost
-Praćenje kompletnog kretanja LOT-a kroz sustav.
+LOT-based receipt of goods, including warehouse, delivery note, and expiration-date records.
 
-## Tehnologije
+### Inventory
 
-- C#
-- WinForms
-- Microsoft SQL Server
-- ADO.NET
-- GitHub
+FIFO issuing of goods from LOT layers.
 
-## Autor
+### Reports
+
+Overview of open items and inventory value.
+
+### LOT Traceability
+
+Tracking the complete movement of a LOT through the system.
+
+## Technologies
+
+* C#
+* WinForms
+* Microsoft SQL Server
+* ADO.NET
+* GitHub
+
+## Author
 
 Marija Odobašić
